@@ -26,7 +26,7 @@ const Register = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "https://booking-react-node.herokuapp.com/api/auth/register",
+        "http://localhost:5000/api/auth/register",
         credentials
       );
       console.log(res);
