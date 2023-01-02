@@ -2,10 +2,14 @@ import React from "react";
 import "./featuredProperties.css";
 import useFetch from "../../hooks/useFetch";
 
+const api_url = process.env.REACT_APP_API_URL;
+
 const FeaturedProperties = () => {
   const { data, loading, error } = useFetch(
-    "https://booking-react-node.herokuapp.com/api/hotels?featured=true&min=10&max=300"
+    `${api_url}hotels?featured=true&min=10&max=300`
   );
+
+  console.log(api_url, data);
 
   return (
     <div className="fp">

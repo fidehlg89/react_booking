@@ -2,9 +2,11 @@ import React from "react";
 import useFetch from "../../hooks/useFetch";
 import "./featured.css";
 
+const api_url=process.env.REACT_APP_API_URL;
+
 const Featured = () => {
   const { data, loading, error } = useFetch(
-    "https://booking-react-node.herokuapp.com/api/hotels/count-by-city?cities=Cancun,CDMX,Monterrey,Guadalajara"
+    `${api_url}hotels/count-by-city?cities=Cancun,CDMX,Monterrey,Guadalajara`
   );
 
   return (

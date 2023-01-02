@@ -17,10 +17,10 @@ const List = () => {
   const [min, setMin] = useState(undefined);
   const [max, setMax] = useState(undefined);
 
+  const api_url = process.env.REACT_APP_API_URL;
+
   const { data, loading, error, reFetch } = useFetch(
-    `https://booking-react-node.herokuapp.com/api/hotels?city=${destination}&min=${
-      min || 0
-    }&max=${max || 9999}`
+    `${api_url}hotels?city=${destination}&min=${min || 0}&max=${max || 9999}`
   );
 
   const handleClick = () => {
