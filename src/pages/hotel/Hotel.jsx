@@ -17,7 +17,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import useFetch from '../../hooks/useFetch';
 import { AuthContext } from '../../context/AuthContext';
 import Reserve from '../../components/reserve/Reserve';
-
+const api_url=process.env.REACT_APP_API_URL;
 const Hotel = () => {
   const location = useLocation()
   const id = location.pathname.split("/")[2]
@@ -26,7 +26,7 @@ const Hotel = () => {
   const [openModal, setOpenModal] = useState(false);
   const navigate = useNavigate()
 
-  const { data, loading, error, reFetch } = useFetch(`https://booking-react-node.herokuapp.com/api/hotels/find/${id}`)
+  const { data, loading, error, reFetch } = useFetch(`${api_url}hotels/find/${id}`)
 
   const { dates, options} = useContext(SearchContext);
 

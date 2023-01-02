@@ -23,7 +23,7 @@
 
 .siTitle {
   font-size: 20px;
-  color: green;
+  color: black;
 }
 
 .siDistance {
@@ -37,10 +37,6 @@
   width: max-content;
   padding: 3px;
   border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
 }
 
 .siSubtitle {
@@ -67,20 +63,20 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between
 }
 
 .siRating {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between
 }
 
-.siRating > span {
+.siRating>span {
   font-weight: 500;
 }
 
-.siRating > button {
-  background-color: #008009;
+.siRating>button {
+  background-color: #003580;
   color: white;
   padding: 5px;
   font-weight: bold;
@@ -103,16 +99,12 @@
   color: gray;
 }
 
-.siCheckButton{
-  background-color: yellowgreen;
+.siCheckButton {
+  background-color: #0071c2;
   color: white;
   font-weight: bold;
   padding: 10px 5px;
   border: none;
   cursor: pointer;
   border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
 }

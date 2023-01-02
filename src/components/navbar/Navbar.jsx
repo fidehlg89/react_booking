@@ -18,7 +18,6 @@ const Navbar = () => {
     }
 
     const logout = () => {
-        console.log("Logout")
         localStorage.removeItem('user')
         navigate('/')
         window.location.reload()
